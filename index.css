@@ -23,7 +23,7 @@ a:hover {
 }
 .menu ul {
     display: flex; // passar o menu para linha
-    justify-content: initial; 
+    justify-content: color-interpolation-filters: ;; 
 }
 .menu li {
     
