@@ -1,24 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Primeiro site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">// para manipular a formação do site em varios pisositivos
+  <title>Sitezeira</title>
 </head>
+
 <body>
-    <header>
+  <header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Portfólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class= 'titulo'>
+      <h1 class="site-title">Hellrison Soares</h1>
+    <h2 class="site-subtitle">Estudante de Engenharia de computação</h2>
+    <h2 class="site-subtitle">E gostoso nas horas vagas</h2>
+    </div>
+    <link rel="stylesheet" href="class.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Lora&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c6f1ac028.js" crossorigin="anonymous"></script>
+  </header>
+  <section class='sobre container'>
+    <h2>Sobre</h2>
+    <figure class='avatar'>
+   <img src="./img/buzz.jpeg" alt="">
+    </figure>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus consequatur deleniti iusto veritatis fugiat quas non accusamus sapiente commodi et vel ex unde voluptas repudiandae laborum totam, doloremque numquam?
+    </p>
+    <p>
+      Rerum eos nemo, vel consequatur fuga obcaecati, unde beatae velit nostrum animi nam repudiandae, rem quos doloremque! Culpa ipsa asperiores officiis, maxime laborum sint, porro et veritatis ducimus accusantium neque.
+    </p>
+    <p>
+      Et placeat explicabo nemo numquam nam, architecto repudiandae quas eligendi, maiores atque eius consequatur hic praesentium quidem asperiores. Laudantium dolorum inventore in architecto quibusdam nihil molestiae natus repellendus ad. Perferendis.
+    </p>
+  </section>
+  <section class= 'portfolio container'>
+    <h2>Portfólio</h2>
+    <div class ='grid'>
+      <figure>
+        <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
+        <figcaption>eCommerce</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+        <figcaption>Mobile</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
+        <figcaption>Web design</figcaption>
+      </figure>
+      <figure>
+        <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+        <figcaption>Apenas um Show</figcaption>
+      </figure>
+    </div>
     
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Hellrison Soares</h1>
-        <h2 class="site-subtitle">Estudante de Engenharia de computação</h2>
+    
+  </section>
+  <section class="contato container" id="contato">
+		<h2>Contato</h2>
+	
+		<div class="grid icons">
+			<a target="_blank" href="https://github.com/hellrison">
+				<i class="fab fa-github"></i>
+			</a>
+			<a target="_blank" href="https://web.whatsapp.com/">
+				<i class="fab fa-whatsapp"></i>
+
+			</a>
+			<a target="_blank" href="https://www.facebook.com/hellrison.soares/">
+        <i class="fab fa-facebook-f"></i>
         
-        
-        <link rel="stylesheet" href="aula01.css" />
-      </header>
+			<a target="_blank" href="https://www.instagram.com/hellrisonsoares/">
+				<i class="fab fa-instagram"></i>
+			</a>
+			
+		</div>
+	</section>
 </body>
+
 </html>
