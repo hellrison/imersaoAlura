@@ -8,21 +8,29 @@
     background-image: url('../imersaoAlura/img/fundo.jpg');
     background-size: auto 100vh;
     height: 100vh;
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    font-size: 12px;
    
   }
   /*se a tela for de 400px, irá carregar esse estilo*/
   @media (min-width: 400px) {
     body {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
   /*breackpoint*/
   @media (min-width: 600px) {
     body {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
-  
+  @media (min-width: 1200px) {
+    body {
+     
+      font-size: 20px;
+    }
+  }
   header {
     height: 100vh;
     display: flex;
@@ -48,10 +56,10 @@
   .menu {
     background-color: white;
     position: fixed;
-    top: 0;
     width: 100vw;
+    top: 0;
+    z-index: 1;
   }
-  
   .menu ul {
     display: flex; /*passar  menu para linhas*/
     justify-content: space-around;
@@ -64,7 +72,7 @@
   .menu a {
     color: teal;
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
     transition: background-color, color 1s; /*para trocar a cor dos icones do menu e voltar ao normal em 1 s*/
   }
 .menu a:active,
@@ -73,7 +81,13 @@
   color: white;
 }
 
-  
+a {
+  color: rgb(71, 60, 12);
+  text-decoration: none; /*para de tirar o underline das palavras*/
+}
+a:hover {
+  text-decoration: underline;  /*para adcionar o underline quando se passar o mouse*/
+}
   .site-title {
     color: whitesmoke;
     text-align: center;
@@ -90,13 +104,13 @@
     font-family: 'Roboto', sans-serif;
   }
   .sobre,
-  .contado,
+  .contato,
   .portfolio {
     padding: 2em;
-    min-height: 100vh; /*pelo menos 100vh, estava se sobrepondo o contato com as img*/
+    min-height: 100vh;
     color: whitesmoke;
-
-   
+  }
+  
   }
   @media (min-width: 1200px) {
     .container {
@@ -114,23 +128,26 @@
     margin-bottom: 1.5em;
     font-size: 2em;
   }
-  .sobre p{/*para configurar o paragrafo do sobre*/
-    color: whitesmoke;
-    margin-bottom: 1.4;
-    text-indent: 2m;
-    
+  .sobre p {
+    color: white;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: justify;
   }
   
   .sobre .avatar {
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: circle(50% at 50% 50%);
     margin-left: 2em;
   }
   
   @media (min-width: 600px) {
     .sobre .avatar {
-      clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+      clip-path: circle(50% at 50% 50%);
       float: right;/*margem ao redor do texto*/
     }
+  }
+  .portfolio figure {
+    text-align: center; /*centralizar as imagens do portfolio*/
   }
   
   .contado,
@@ -140,9 +157,7 @@
    
   }
   
-  .portfolio figure {
-    text-align: center; /*centralizar as imagens do portfolio*/
-  }
+ 
   .img-portfolio {
     height: 180px;
     width: 240px;
@@ -183,10 +198,3 @@
   }
 
   
-a {
-    color: rgb(71, 60, 12);
-    text-decoration: none; /*para de tirar o underline das palavras*/
-}
-a:hover {
-    text-decoration: underline;  /*para adcionar o underline quando se passar o mouse*/
-}
